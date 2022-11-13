@@ -73,7 +73,7 @@ If you want to make any changes to the [Dockerfile](https://github.com/tnscorcor
 - clone this repo and make your local changes
 - start Docker on your computer
 - login to your Docker Registry of choice (e.g. Quay.io, Dockerhub)
-- run the following, substrututing your in you repo name
+- run the following, substituting with your repo name
 ```
 docker build -f Dockerfile -t YOUR_CONTAINER_REGISTRY_ACCOUNT_NAME/kafka-populator:latest .
 docker tag YOUR_CONTAINER_REGISTRY_ACCOUNT_NAME/kafka-populator:latest YOUR_CONTAINER_REGISTRY_ACCOUNT_NAME/kafka-populator:latest
