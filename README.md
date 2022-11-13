@@ -44,7 +44,7 @@ This will begin an approximate 2 hour duration job that will populte the requisi
 After a couple of hours, navigate to **Workloads > Jobs** and your *Kafka Loader* job should have completed as shown.
 <img src="./images/setup7.png" alt="drawing" width="600"/>
 
-If not, drill into the job and selected Pods -- then examine the pod logs to see what's going on.
+If not, drill into the job and select Pods. Then examine the pod logs to see what's going on.
 
 Now to verify that your job ran correctly and Kafka did populate, open in a terminal in pod **odh-message-bus2-kafka-0** and run the following
 ```
