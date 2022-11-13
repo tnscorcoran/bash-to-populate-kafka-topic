@@ -1,0 +1,12 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: kafka-loader
+spec:
+  template:
+    spec:
+      containers:
+      - name: kafka-loader
+        image: tnscorcoran/kafka-populator:latest
+      restartPolicy: Never
+  backoffLimit: 4
