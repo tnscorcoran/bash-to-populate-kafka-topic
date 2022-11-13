@@ -17,11 +17,12 @@ It uses a Kubernetes job that employs a Docker image that loops through a CSV fi
 - Navigate to **Operators > Installed Operators** and open the installed *Strimzi* operator
 - Click *Kafka* then *Create Kafka*
 <img src="./images/setup1.png" alt="drawing" width="600"/>
-- Name the Kakfa *odh-message-bus2* (the original one is called *odh-message-bus*)
+
+- Name the Kakfa **odh-message-bus2** (the original one is called **odh-message-bus**)
 <img src="./images/setup2.png" alt="drawing" width="600"/>
 
 
 
 
-Should you wish to name these differently, change line 14 of the [Dockerfile](https://github.com/tnscorcoran/bash-to-populate-kafka-topic/Dockerfile)
+Should you wish to name these differently, change line 14 of the [Dockerfile](https://github.com/tnscorcoran/bash-to-populate-kafka-topic/blob/main/Dockerfile)
 
