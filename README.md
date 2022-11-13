@@ -65,3 +65,27 @@ To use your newly created topic in [Merge_Data.ipynb](https://github.com/odh-lab
 <img src="./images/setup10.png" alt="drawing" width="600"/>
 
 From here, continue your Churn workshop as normal
+
+
+## Build your own Image
+
+If you want to make any changes to the [Dockerfile](https://github.com/tnscorcoran/bash-to-populate-kafka-topic/blob/main/Dockerfile), do the following
+- clone this repo and make your local changes
+- start Docker on your computer
+- login to your Docker Registry of choice (e.g. Quay.io, Dockerhub)
+- run the following, substrututing your in you repo name
+```
+docker build -f Dockerfile -t YOUR_CONTAINER_REGISTRY_ACCOUNT_NAME/kafka-populator:latest .
+docker tag YOUR_CONTAINER_REGISTRY_ACCOUNT_NAME/kafka-populator:latest YOUR_CONTAINER_REGISTRY_ACCOUNT_NAME/kafka-populator:latest
+docker push YOUR_CONTAINER_REGISTRY_ACCOUNT_NAME/kafka-populator:latest
+
+```
+- e.g. these were my entries
+```
+docker build -f Dockerfile -t tnscorcoran/kafka-populator:latest .
+docker tag tnscorcoran/kafka-populator:latest tnscorcoran/kafka-populator:latest
+docker push tnscorcoran/kafka-populator:latest
+
+```
+
+Enjoy the rest of the awesome Churn Workshop!
