@@ -23,7 +23,8 @@ It uses a Kubernetes job that employs a Docker image that loops through a CSV fi
 
 - Click *Kafka Topic* then *Create Kafka Topic*
 <img src="./images/setup3.png" alt="drawing" width="600"/>
-- Enter the following for Name and Labels respectively and ***Create***
+
+- Enter the following for Name and Labels respectively and Click the **Create** button at the bottom of the screen.
 
 ```
 datatelco2
