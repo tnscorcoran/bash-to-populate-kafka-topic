@@ -12,8 +12,8 @@ It uses a Kubernetes job that employs a Docker image that loops through a CSV fi
 
 - First Login to OpenShift.
 - Visit **Operators > Operator Hub** and search for *Strimzi*
-- Install the *Strimzi Community Operator*
-- Select the *ml-workshop* project on the top of the screen, which yoiu should have created in the [main install process](https://github.com/odh-labs/ml-workshop/blob/main/docs/lab-setup-new.md)
+- Install the *Strimzi Community Operator* - going with all the defaults
+- Select the *ml-workshop* project on the top of the screen, which you should have created in the [main install process](https://github.com/odh-labs/ml-workshop/blob/main/docs/lab-setup-new.md)
 - Navigate to **Operators > Installed Operators** and open the installed *Strimzi* operator
 - Click *Kafka* then *Create Kafka*
 <img src="./images/setup1.png" alt="drawing" width="600"/>
