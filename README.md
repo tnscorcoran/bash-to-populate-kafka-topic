@@ -56,6 +56,12 @@ You should see about 7000 JSON records streaming past you.
 
 <img src="./images/setup8.png" alt="drawing" width="600"/>
 
+To use your newly created topic in [Merge_Data.ipynb](https://github.com/odh-labs/ml-workshop/blob/main/src/notebooks/Merge_Data.ipynb) fully described in the [Data Engineer documentaion](https://github.com/odh-labs/ml-workshop/blob/main/docs/lab1-data-engineering.md), change the default Kafka broker and topic from
 
+<img src="./images/setup9.png" alt="drawing" width="600"/>
 
+**to**
 
+<img src="./images/setup10.png" alt="drawing" width="600"/>
+
+From here, continue your Churn workshop as normal
