@@ -33,7 +33,7 @@ strimzi.io/cluster=odh-message-bus2
 
 <img src="./images/setup4.png" alt="drawing" width="600"/>
 
-Should you wish to name the Kafka and Kafka Topic differently, change line 14 of the [Dockerfile](https://github.com/tnscorcoran/bash-to-populate-kafka-topic/blob/main/Dockerfile) and follow the instructions below, to **Build your own Image**
+Should you wish to name the Kafka and Kafka Topic differently, change line 14 of the [Dockerfile](https://github.com/tnscorcoran/bash-to-populate-kafka-topic/blob/main/Dockerfile) and follow the instructions below, to [**Build your own Image**](https://github.com/tnscorcoran/bash-to-populate-kafka-topic#build-your-own-image)
 
 
 Next, in OpenShift, with your *ml-workshop* project selected, click the + icon then copy and paste the contents of [job.yaml](https://github.com/tnscorcoran/bash-to-populate-kafka-topic/blob/main/job.yaml) into the free text area and click **Create**
