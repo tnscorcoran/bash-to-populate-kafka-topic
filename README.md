@@ -21,8 +21,11 @@ It uses a Kubernetes job that employs a Docker image that loops through a CSV fi
 - Name the Kakfa **odh-message-bus2** (the original one is called **odh-message-bus**)
 <img src="./images/setup2.png" alt="drawing" width="600"/>
 
+- Click *Kafka Topic* then *Create Kafka Topic*
+<img src="./images/setup3.png" alt="drawing" width="600"/>
 
 
 
-Should you wish to name these differently, change line 14 of the [Dockerfile](https://github.com/tnscorcoran/bash-to-populate-kafka-topic/blob/main/Dockerfile)
+
+Should you wish to name the Kafka and Kafka Topic differently, change line 14 of the [Dockerfile](https://github.com/tnscorcoran/bash-to-populate-kafka-topic/blob/main/Dockerfile) and follow the instructions below, to build your own image
 
