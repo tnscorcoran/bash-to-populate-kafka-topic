@@ -23,9 +23,13 @@ It uses a Kubernetes job that employs a Docker image that loops through a CSV fi
 
 - Click *Kafka Topic* then *Create Kafka Topic*
 <img src="./images/setup3.png" alt="drawing" width="600"/>
+- Enter the following for Name and Labels respectively and ***Create***
+```
+datatelco2
+strimzi.io/cluster=odh-message-bus2
+```
+<img src="./images/setup4.png" alt="drawing" width="600"/>
 
 
-
-
-Should you wish to name the Kafka and Kafka Topic differently, change line 14 of the [Dockerfile](https://github.com/tnscorcoran/bash-to-populate-kafka-topic/blob/main/Dockerfile) and follow the instructions below, to build your own image
+Should you wish to name the Kafka and Kafka Topic differently, change line 14 of the [Dockerfile](https://github.com/tnscorcoran/bash-to-populate-kafka-topic/blob/main/Dockerfile) and follow the instructions below, to **Build your own Image**
 
