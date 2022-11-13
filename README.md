@@ -39,4 +39,23 @@ Should you wish to name the Kafka and Kafka Topic differently, change line 14 of
 Next, in OpenShift, with your *ml-workshop* project selected, click the + icon then copy and paste the contents of [job.yaml](https://github.com/tnscorcoran/bash-to-populate-kafka-topic/blob/main/job.yaml) into the free text area and click **Create**
 <img src="./images/setup6.png" alt="drawing" width="600"/>
 
+This will begin an approximate 2 hour duration job that will populte the requisite 7000+ records on Kafka.
+
+After a couple of hours, navigate to **Workloads > Jobs** and your *Kafka Loader* job should have completed as shown.
+<img src="./images/setup7.png" alt="drawing" width="600"/>
+
+If not, drill into the job and selected Pods -- then examine the pod logs to see what's going on.
+
+Now to verify that your job ran correctly and Kafka did populate, open in a terminal in pod **odh-message-bus2-kafka-0** and run the following
+```
+cd /opt/kafka/bin
+./kafka-console-consumer.sh --bootstrap-server odh-message-bus2-kafka-bootstrap:9092 --topic datatelco2 --from-beginning
+```
+
+You should see about 7000 JSON records streaming past you.
+
+<img src="./images/setup8.png" alt="drawing" width="600"/>
+
+
+
 
