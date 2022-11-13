@@ -24,10 +24,12 @@ It uses a Kubernetes job that employs a Docker image that loops through a CSV fi
 - Click *Kafka Topic* then *Create Kafka Topic*
 <img src="./images/setup3.png" alt="drawing" width="600"/>
 - Enter the following for Name and Labels respectively and ***Create***
+
 ```
 datatelco2
 strimzi.io/cluster=odh-message-bus2
 ```
+
 <img src="./images/setup4.png" alt="drawing" width="600"/>
 
 
