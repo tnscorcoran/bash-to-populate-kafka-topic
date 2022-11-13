@@ -37,6 +37,6 @@ Should you wish to name the Kafka and Kafka Topic differently, change line 14 of
 
 
 Next, in OpenShift, with your *ml-workshop* project selected, click the + icon then copy and paste the contents of [job.yaml](https://github.com/tnscorcoran/bash-to-populate-kafka-topic/blob/main/job.yaml) into the free text area and click **Create**
-<img src="./images/setup5.png" alt="drawing" width="600"/>
+<img src="./images/setup6.png" alt="drawing" width="600"/>
 
 
