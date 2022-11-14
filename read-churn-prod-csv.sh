@@ -27,7 +27,7 @@ while IFS=, read customerID PhoneService MultipleLines InternetService OnlineSec
     # the & in the following call causes asynchronous execution - and an out of memory error:
     # echo $jason | /opt/kafka_2.13-3.0.0/bin/kafka-console-producer.sh --bootstrap-server $brokers --topic $topic &
 
-    # therefore use synchronous execution - takes hours.
+    # therefore use synchronous execution - this takes hours.
     echo $jason | /opt/kafka_2.13-3.0.0/bin/kafka-console-producer.sh --bootstrap-server $brokers --topic $topic
 
     
